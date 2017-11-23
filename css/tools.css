@@ -1,0 +1,247 @@
+@font-face {
+	font-family: 'Gordita';
+	src: url('../fonts/gorditaregular-webfont.eot'); /* IE9 Compat Modes */
+	src: url('../fonts/gorditaregular-webfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+	url('../fonts/gorditaregular-webfont.woff2') format('woff2'), /* Super Modern Browsers */
+	url('../fonts/gorditaregular-webfont.woff') format('woff'), /* Pretty Modern Browsers */
+	url('../fonts/gorditaregular-webfont.ttf')  format('truetype'), /* Safari, Android, iOS */
+	url('../fonts/gorditaregular-webfont.svg#svgFontName') format('svg'); /* Legacy iOS */
+}
+
+@font-face {
+	font-family: 'GorditaMedium';
+	src: url('../fonts/gorditamedium-webfont.eot'); /* IE9 Compat Modes */
+	src: url('../fonts/gorditamedium-webfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+	url('../fonts/gorditamedium-webfont.woff2') format('woff2'), /* Super Modern Browsers */
+	url('../fonts/gorditamedium-webfont.woff') format('woff'), /* Pretty Modern Browsers */
+	url('../fonts/gorditamedium-webfont.ttf')  format('truetype'), /* Safari, Android, iOS */
+	url('../fonts/gorditamedium-webfont.svg#svgFontName') format('svg'); /* Legacy iOS */
+}
+
+@font-face {
+	font-family: 'GorditaBold';
+	src: url('../fonts/gorditabold-webfont.eot'); /* IE9 Compat Modes */
+	src: url('../fonts/gorditabold-webfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+	url('../fonts/gorditabold-webfont.woff2') format('woff2'), /* Super Modern Browsers */
+	url('../fonts/gorditabold-webfont.woff') format('woff'), /* Pretty Modern Browsers */
+	url('../fonts/gorditabold-webfont.ttf')  format('truetype'), /* Safari, Android, iOS */
+	url('../fonts/gorditabold-webfont.svg#svgFontName') format('svg'); /* Legacy iOS */
+}
+
+body {
+	font-family: 'Gordita';
+	overflow-x: hidden;
+}
+
+.homepage-link,
+.white-logo,
+.next,
+.previous {
+	z-index: 150;
+	position: relative;
+	color: #444242;
+	margin-top: 2.5rem;
+}
+
+.white-logo {
+	width: 26%;
+	margin-left: 2.5rem;
+	margin-bottom: 3rem;
+}
+
+.homepage-link {
+	float: right;
+	margin-right: 2.5rem;
+	border-bottom: 1px solid #444242;
+}
+
+.previous {
+	float: left;
+	margin-left: 2.5rem;
+	margin-bottom: 2rem;
+}
+
+.next {
+	float: right;
+	margin-right: 2.5rem;
+	margin-bottom: 2rem;
+}
+
+.previous:hover,
+.next:hover {
+	text-decoration: none;
+}
+
+.homepage-link:hover {
+	text-decoration: none;
+}
+
+.red-tool {
+	background-color: #FB1438;
+}
+
+.blue-tool {
+	background-color: #3DA8E9;
+}
+
+.pink-tool {
+	background-color: #D32C86;
+}
+
+.green-tool {
+	background-color: #31D2B2;
+}
+
+.orange-tool {
+	background-color: #F1882E;
+}
+
+.purple-tool {
+	background-color: #6B4494;
+}
+
+.dark-blue-tool {
+	background-color: #226CE0;
+}
+
+.yellow-tool  {
+	background-color: #FFDA2F;
+}
+
+.tool {
+	height: 100%;
+}
+
+.tool img {
+	height: auto;
+	width: 100%;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 2rem;
+}
+
+h1 {
+	color: #444242;
+	font-size: 1.5rem;
+	line-height: 1.3;
+	letter-spacing: 1.4px;
+	z-index: 10;
+	font-family: 'GorditaMedium';
+}
+
+.tool-right h1 {
+	font-size: 2.5rem;
+	margin-left: 4rem;
+}
+
+.top {
+	margin-top: 1.5rem
+}
+
+.tools-copy,
+li {
+	width: 50%;
+	font-size: 1rem;
+	margin-left: 4rem;
+}
+
+.tools-copy span {
+	font-family: 'GorditaMedium'; 
+}
+
+.tool-right a p {
+	font-family: 'GorditaMedium';
+	color: #444242;
+	text-decoration: underline;
+}
+
+.tool-right a:hover {
+	text-decoration: none;
+}
+
+.tool-right,
+.tool {
+	margin-bottom: 1.5rem;
+}
+
+li {
+	margin-left: 4rem;
+	width: 50%;
+}
+
+.no-margin {
+	margin-bottom: 0;
+}
+
+@media only screen and (max-width: 1650px) { 
+	.tool-right h1 { font-size: 2.2rem; }
+	.tools-copy, li { width: 60%; font-size: 0.95rem; }
+}
+
+@media only screen and (max-width: 1650px) { 
+	.tool-right h1 { font-size: 2rem; line-height: 1.2; }
+	.tools-copy, li { width: 65%; font-size: 0.9rem; }
+}
+
+@media only screen and (max-width: 1350px) { 
+	.tool-right h1 { font-size: 1.8rem; }
+	.tools-copy, li { width: 80%; font-size: 0.8rem; }
+	.previous, .next {margin-bottom: 1rem; margin-top: 1rem; font-size: 0.9rem;}
+	.homepage-link { font-size: 0.9rem; }
+	.white-logo { width: 36%; }
+}
+
+@media only screen and (max-width: 1250px) { 
+	.tool-right h1, .tools-copy, li { margin-left: 2rem; }
+}
+
+@media only screen and (max-width: 900px) { 
+	.homepage-link, .previous, .next {font-size: 0.8rem;}
+	.white-logo { width: 43%; }
+	.tool-right h1 { font-size: 1.5rem;}
+	.tools-copy, li { font-size: 0.75rem; }
+}
+
+@media only screen and (max-width: 767px) { 
+	.white-logo { width: 50%; }
+	.tool {width: 73%;}
+	.tool-right h1 {font-size: 1.8rem; margin-top: 2rem;}
+	.tool-right h1, .tools-copy, li { margin-left: 3rem; }
+	.tools-copy, li {width: 55%; font-size: 0.9rem;}
+	.homepage-link, .previous, .next {font-size: 0.9rem;}
+	.previous { margin-left: 3rem; }
+}
+
+@media only screen and (max-width: 600px) { 
+	.tool {width: 78%;}
+	.tool-right h1 {font-size: 1.6rem;}
+	.tools-copy, li {width: 64%; font-size: 0.8rem;}
+}
+
+@media only screen and (max-width: 500px) { 
+	.tool {width: 74%;}
+	.tool-right h1, .tools-copy, li { margin-left: 1.5rem; }
+	.tool-right h1 { margin-top: 0.8rem; }
+	.tools-copy, li {width: 62%; font-size: 0.75rem;}
+	.previous, .white-logo { margin-left: 1.5rem; }
+	.homepage-link, .next {margin-right: 1.5rem;}
+	.homepage-link, .previous, .next {font-size: 0.75rem;}
+	.white-logo { width: 68%; }
+}
+
+@media only screen and (max-width: 414px) { 
+	.tool-right h1 {font-size: 1.5rem;}
+	.tool {width: 91%;}
+	.tools-copy, li { width: 75%; }
+	.tool img { padding: 1.5rem; }
+}
+
+@media only screen and (max-width: 375px) { 
+	.small { flex-direction: column; }
+	.white-logo {width: 42%; margin-bottom: 1rem;}
+	.homepage-link { float: left; margin-left: 1.5rem; margin-top: 0rem; margin-bottom: 2.5rem; }
+	.tools-copy, li {width: 80%;}
+	.tool {width: 90%;}
+	.small .col-6 {max-width: 100%;}
+}
