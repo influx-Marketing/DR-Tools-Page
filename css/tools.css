@@ -41,6 +41,7 @@ body {
 	position: relative;
 	color: #444242;
 	margin-top: 2.5rem;
+	font-size: 1rem;
 }
 
 .white-logo {
@@ -52,7 +53,7 @@ body {
 .homepage-link {
 	float: right;
 	margin-right: 2.5rem;
-	border-bottom: 1px solid #444242;
+	/*border-bottom: 1px solid #444242;*/
 }
 
 .previous {
@@ -67,13 +68,17 @@ body {
 	margin-bottom: 2rem;
 }
 
+.homepage-link:hover,
 .previous:hover,
 .next:hover {
 	text-decoration: none;
 }
 
-.homepage-link:hover {
-	text-decoration: none;
+.homepage-link:hover,
+.previous:hover p,
+.next:hover p {
+	color: #444242;
+	border-bottom: 1px solid #444242;
 }
 
 .red-tool {

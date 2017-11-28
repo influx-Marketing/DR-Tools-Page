@@ -36,8 +36,9 @@ html, body {
 }
 
 body {
+	overflow-y:hidden;
 	font-family: 'Gordita';
-	overflow-x: hidden;
+	/*overflow-x: hidden;*/
 }
 
 h1 {
@@ -284,12 +285,155 @@ svg {
 	color: #444242;
 	right: 4.5rem;
 	top: 3rem;
-	border-bottom: 1px solid #444242;
 }
 
 .homepage-link:hover {
 	text-decoration: none;
+	color: #444242;
+	border-bottom: 1px solid #444242;
 }
 
+.tablet {
+	display: none;
+}
 
+@media only screen and (max-width: 1650px) { 
+	.red img, .blue img { width: 110%; left: 36.5%; top: 5%; }
+	.pink img, .yellow img { width: 110%; left: -58%; top: 4.5%; }
+	.green img { width: 144%; left: -69.5%; top: 19.5%; }
+	.orange img { width: 125%; left: 57.5%; top: 11%; }
+	.purple img { width: 140%; left: 34.2%; top: 4rem; }
+	.dark-blue img { width: 140%; left: -68.4%; top: 4rem; }
+}
 
+@media only screen and (max-width: 1450px) { 
+	.green img { width: 152%; left: -72.5%; top: 22.5%; }
+	.orange img { width: 138%; left: 53.5%; top: 13%; }
+	.red h1, .blue h1, .pink h1, .green h1, .orange h1, .purple h1, .dark-blue h1, .yellow h1 { left: 3.5rem; bottom: 4rem; font-size: 1.4rem; }
+	svg { left: 3.5rem; bottom: 2rem; }
+	.white-logo { left: 3.5rem; }
+}
+
+@media only screen and (max-width: 1350px) { 
+	.red img, .blue img { top: 9%; }
+	.pink img, .yellow img { width: 110%; left: -58%; top: 4.5%; }
+	.green img { width: 152%; left: -72.5%; top: 22.5%; }
+	.orange img { width: 138%; left: 53.5%; top: 13%; }
+	.purple img { width: 140%; left: 34.2%; top: 4rem; }
+	.dark-blue img { width: 140%; left: -68.4%; top: 4rem; }
+}
+
+@media only screen and (max-width: 1250px) { 
+	.red img, .blue img { top: 12%; }
+	.pink img, .yellow img { top: 11.5%; }
+	.green img { top: 25.5%; }
+	.orange img { width: 134%; left: 54.5%; top: 17%; }
+	.purple img, .dark-blue img  {top: 7rem; }
+	.red h1, .blue h1, .pink h1, .green h1, .orange h1, .purple h1, .dark-blue h1, .yellow h1 { left: 2.5rem; bottom: 4rem; font-size: 1.2rem; }
+	svg { left: 2.5rem;}
+	.white-logo { left: 2.5rem; }
+}
+
+@media only screen and (max-width: 1150px) { 
+	.white-logo {width: 30%; }
+}
+
+@media only screen and (max-width: 1250px) { 
+	.red img, .blue img { top: 17%; }
+	.pink img, .yellow img { top: 16.5%; }
+	.green img { top: 28.5%; }
+	.orange img { top: 23%; }
+	.purple img, .dark-blue img {top: 9rem; }
+	.red h1, .blue h1, .pink h1, .green h1, .orange h1, .purple h1, .dark-blue h1, .yellow h1 { left: 2rem; bottom: 4rem; font-size: 1.2rem; }
+	svg { left: 2rem; width: 14%; bottom: 2rem; }
+	.white-logo { left: 2rem; }
+	.homepage-link { right: 3rem; }
+}
+
+@media only screen and (max-width: 767px) {
+	.desktop { display: none; }
+	.tablet {display: block;}
+	body { overflow-y: visible; }
+	.border { border: 0px solid #e9ecef!important; border-bottom: 1px solid #d4d4d4 !important; } 	
+	.white-logo { left: 3rem; width: 23%; top: 2rem; }
+	.homepage-link {top: 2rem; font-size: 0.95rem;}
+	.red h1, .blue h1, .pink h1, .green h1, .orange h1, .purple h1, .dark-blue h1, .yellow h1 {
+		position: relative;
+		float: right;
+		font-size: 1rem;
+		margin-top: 7.5rem;
+		left: 0; bottom: 0; top: 0; right: 0;
+	}
+	.red h1 { margin-right: 5.5rem; }
+	.blue h1 { margin-right: 4.1rem; }
+	.pink h1, .green h1 { margin-right: 3.1rem; }
+	.orange h1 { margin-right: 1.1rem; }
+	.purple h1 { margin-right: 2.6rem; }
+	.dark-blue h1 { margin-right: 0.8rem; margin-top: 8.5rem;}
+	.yellow h1 { margin-right: 0.8rem; }
+ 	svg { 
+ 		position: relative;
+		float: right;
+		width: 4%;
+		margin-right: -1.8rem;
+		margin-top: 10.5rem;
+		left: 0; bottom: 0; top: 0; right: 0;
+ 	}
+ 	.red img, .blue img, .pink img { width: 25%; top: 10%; left: 16rem;}
+ 	.yellow img{ width: 25%; top: -55%; left: 16rem;}
+ 	.green img { width: 36%; left: 13rem; }
+ 	.orange img { width: 32%; left: 16rem; top: 2rem;}
+ 	.purple img, .dark-blue img { width: 34%; left: 14rem; top: 2rem;}
+ }
+
+ @media only screen and (max-width: 650px) {
+ 	svg {width: 5%;}
+	.red img, .blue img, .pink img { left: 13.5rem;}
+ 	.yellow img{ left: 12.5rem; top: -46%;}
+ 	.green img { left: 11rem; }
+ 	.orange img { left: 13rem;}
+ 	.purple img, .dark-blue img { left: 11rem; }
+ }
+
+  @media only screen and (max-width: 600px) {
+  	.homepage-link, .red h1, .blue h1, .pink h1, .green h1, .orange h1, .purple h1, .dark-blue h1, .yellow h1 { font-size: 0.8rem; }
+ 	svg {width: 4.5%; margin-right: -1.6rem; margin-top: 10rem;}
+	.red h1 { margin-right: 5rem; }
+	.blue h1 { margin-right: 3.8rem; }
+	.pink h1, .green h1 { margin-right: 3rem; }
+	.dark-blue h1 { margin-right: 0.9rem; }
+	.yellow h1 { margin-right: 0.9rem; }
+	.purple h1 { margin-right: 2.2rem; }
+	.red img, .blue img, .pink img { width: 23%; left: 13rem;}
+	.green img { left: 10rem; width: 37%; }
+ 	.orange img { left: 12rem;}
+ 	.yellow img{ left: 13rem; top: -23%; width: 23%;}
+ 	.purple img, .dark-blue img { left: 10.5rem; }
+ }
+
+   @media only screen and (max-width: 550px) {
+	.red img, .blue img, .pink img, .yellow img{ left: 7rem; width: 26%}
+	.green img { left: 5rem; }
+ 	.orange img { left: 7rem;}
+ 	.purple img, .dark-blue img { left: 5.5rem; }
+ }
+
+  @media only screen and (max-width: 450px) {
+  	.white-logo { width: 32%; }
+	.red img, .blue img, .pink img, .yellow img{ left: 3rem; width: 34%;}
+	.green img { left: 2.5rem; width: 46%;}
+ 	.orange img { left: 3rem; width: 40%;}
+ 	.purple img, .dark-blue img { left: 2.5rem; width: 44%;}
+ 	svg { margin-top: 9rem; margin-right: -1.2rem; }
+ 	.red h1, .blue h1, .pink h1, .green h1, .orange h1, .purple h1, .yellow h1 {margin-top: 6.5rem;}
+ 	.dark-blue h1 { margin-top: 7.5rem; }
+ }
+
+@media only screen and (max-width: 375px) { 
+	.small { flex-direction: column; }
+	.white-logo {width: 42%; margin-bottom: 1rem;}
+	.small .col-6 {max-width: 100%;}
+	.homepage-link { float: left; margin-right: 9.8rem; margin-top: 1.7rem; }
+	.red h1, .blue h1, .pink h1, .green h1, .orange h1, .purple h1, .yellow h1 { margin-top: 6rem; }
+	svg { margin-top: 8.5rem; margin-right: -1rem; margin-bottom: 0.8rem;}
+}
