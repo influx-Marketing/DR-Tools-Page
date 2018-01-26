@@ -31,26 +31,48 @@
       <img src="img/dr-runbook-purple-gif.gif">
     </div>
 
+    <a href="bandwidth-calc.html"><img class="arrow" src="img/arrow.svg"></a>
+
     <div class="col-md-6 tool-right">
       <h1 class="h1-tool">Disaster Recovery <Br>Runbook</h1>
       <p class="top tools-copy"><span>What is it?</span><br>A downloadable Word document Disaster Recovery Runbook Template.</p>
       <p class="tools-copy"><span>How long will it take?</span><br>1- 2+ hours to complete (approx.).</p>
       <p class="tools-copy"><span>When should I use it?</span><br>When updating your IT disaster recovery.</p>
       <p class="tools-copy"><span>How does it help?</span><br>The template includes key areas to include in your recovery runbook for you to tailor to suit you.</p>
-      <a href="http://info.databarracks.com/DR-Runbook.html"><p class="tools-copy">Go to the tool</p></a>
-    </div>
-  </div>
+      <p class="tools-copy padding"><span>Get the tool</span></p>
+
+      <script src="//app-lon02.marketo.com/js/forms2/js/forms2.min.js"></script>
+      <form id="mktoForm_252"></form>
+      <script>MktoForms2.loadForm("//app-lon02.marketo.com", "382-LXN-478", 252);</script>
+
+      <script src="//app-lon02.marketo.com/js/forms2/js/forms2.min.js"></script>
+      <script>
+        MktoForms2.whenReady(function (form){
+      //Add an onSuccess handler
+      form.onSuccess(function(values, followUpUrl){
+       //get the form's jQuery element and hide it
+       form.getFormElem().hide();
+       document.getElementById('confirmform').style.visibility = 'visible';
+       //return false to prevent the submission handler from taking the lead to the follow up url.
+       return false;
+     });
+    });
+  </script>
+
+  <div id="confirmform" style="visibility:hidden;"><p class="tools-copy">Thank you. Please check your emails for your downloaded content.</p></div>
+</div>
+</div>
 </div>
 
 <div class="container-fluid">
   <div class="row">
     <div class="col-6">
      <a class="previous" href="cost-of-it.html"><p>Previous</p></a>
-    </div>
-    <div class="col-6">
-      <a class="next" href="bandwidth-calc.html"><p>Next</p></a>
-    </div>
+   </div>
+   <div class="col-6">
+    <a class="next" href="bandwidth-calc.html"><p>Next</p></a>
   </div>
+</div>
 </div>
 
 </body>

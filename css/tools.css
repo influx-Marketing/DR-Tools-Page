@@ -33,6 +33,14 @@ body {
 	overflow-x: hidden;
 }
 
+.arrow { 
+	display: none;
+	width: 5%;
+	position: absolute;
+	top: 18rem;
+	left: 37rem;
+}
+
 .homepage-link,
 .white-logo,
 .next,
@@ -53,7 +61,6 @@ body {
 .homepage-link {
 	float: right;
 	margin-right: 2.5rem;
-	/*border-bottom: 1px solid #444242;*/
 }
 
 .previous {
@@ -66,6 +73,10 @@ body {
 	float: right;
 	margin-right: 2.5rem;
 	margin-bottom: 2rem;
+}
+
+.blank {
+	position: absolute;
 }
 
 .homepage-link:hover,
@@ -86,7 +97,7 @@ body {
 }
 
 .blue-tool {
-	background-color: #3DA8E9;
+	background-color: #3DA8E9; 
 }
 
 .pink-tool {
@@ -114,7 +125,9 @@ body {
 }
 
 .tool {
-	height: 100%;
+	height: 0;
+	padding-bottom: 37.27%;
+	position: relative;
 }
 
 .tool img {
@@ -124,6 +137,7 @@ body {
 	margin-left: auto;
 	margin-right: auto;
 	padding: 2rem;
+	position: absolute;
 }
 
 h1 {
@@ -179,26 +193,96 @@ li {
 	margin-bottom: 0;
 }
 
+.padding {
+	margin-bottom: 0.5rem;
+}
+
+form#mktoForm_246, form#mktoForm_253, form#mktoForm_252 {
+	margin-left: 3.4rem;
+	font-family: 'Gordita' !important;
+	width: 50%;
+}
+
+span.mktoButtonWrap.mktoSimple {
+	margin-left: 139px !important;
+}
+
+label.mktoLabel.mktoHasWidth {
+	width: 150px !important;
+	font-size: 1rem !important;
+}
+
+button.mktoButton {
+	position: absolute;
+	width: 135%;
+	right: -18.1rem;
+}
+
+.mktoForm .mktoButtonWrap.mktoSimple button.mktoButton {
+	background: #444242 !important;
+	border: none !important;
+	padding: 0.8em 1.5em;
+}
+
+.mktoForm input[type=text], .mktoForm input[type=url], .mktoForm input[type=email], .mktoForm input[type=tel], .mktoForm input[type=number], .mktoForm input[type=date], .mktoForm textarea.mktoField, .mktoForm select.mktoField {
+	border-bottom: 1px solid #444242 !important;
+	width: 280px !important;
+	border-top: none !important;
+	border-left: none !important;
+	border-right: none !important;
+	font-size: 1rem !important;
+}
+
+.mktoFieldDescriptor.mktoFormCol {
+	width: 100% !important;
+}
+
+.mktoButtonRow {
+	margin-top: 0.5rem !important;
+}
+
+.mktoButton {
+	position: absolute !important;
+	left: 16.5rem !important;
+}
+
+input:focus {
+    outline:none !important;
+}
+
 @media only screen and (max-width: 1650px) { 
 	.tool-right h1 { font-size: 2.2rem; }
-	.tools-copy, li { width: 60%; font-size: 0.95rem; }
+	.tools-copy, li, label.mktoLabel.mktoHasWidth { width: 60%; font-size: 0.95rem; }
+	label.mktoLabel.mktoHasWidth {font-size: 0.95rem !important; }
 }
 
 @media only screen and (max-width: 1650px) { 
 	.tool-right h1 { font-size: 2rem; line-height: 1.2; }
 	.tools-copy, li { width: 65%; font-size: 0.9rem; }
+	label.mktoLabel.mktoHasWidth {font-size: 0.9rem !important; }
 }
 
 @media only screen and (max-width: 1350px) { 
 	.tool-right h1 { font-size: 1.8rem; }
-	.tools-copy, li { width: 80%; font-size: 0.8rem; }
+	.tools-copy, li { width: 80%; font-size: 0.8rem;  }
+	label.mktoLabel.mktoHasWidth {font-size: 0.8rem !important; }
+	.mktoForm input[type=text], .mktoForm input[type=url], .mktoForm input[type=email], .mktoForm input[type=tel], .mktoForm input[type=number], .mktoForm input[type=date], .mktoForm textarea.mktoField, .mktoForm select.mktoField {padding: 0px !important; margin-top: -5px !important;}
+	label.mktoLabel.mktoHasWidth { width: 122px !important; }
 	.previous, .next {margin-bottom: 1rem; margin-top: 1rem; font-size: 0.9rem;}
 	.homepage-link { font-size: 0.9rem; }
+	.mktoButtonRow { margin-top: 0rem !important;}
 	.white-logo { width: 36%; }
+	.mktoButton { left: 14.7rem !important; }
 }
 
 @media only screen and (max-width: 1250px) { 
 	.tool-right h1, .tools-copy, li { margin-left: 2rem; }
+	form#mktoForm_246, form#mktoForm_253, form#mktoForm_252 {margin-left: 1.4rem !important;}
+}
+
+@media only screen and (max-width: 1000px) { 
+	.mktoForm input[type=text], .mktoForm input[type=url], .mktoForm input[type=email], .mktoForm input[type=tel], .mktoForm input[type=number], .mktoForm input[type=date], .mktoForm textarea.mktoField, .mktoForm select.mktoField { width: 235px !important; }
+	.mktoButton { left: 11.9rem !important; }
 }
 
 @media only screen and (max-width: 900px) { 
@@ -206,33 +290,80 @@ li {
 	.white-logo { width: 43%; }
 	.tool-right h1 { font-size: 1.5rem;}
 	.tools-copy, li { font-size: 0.75rem; }
+	label.mktoLabel.mktoHasWidth {font-size: 0.75rem !important; }
+	.mktoForm input[type=text], .mktoForm input[type=url], .mktoForm input[type=email], .mktoForm input[type=tel], .mktoForm input[type=number], .mktoForm input[type=date], .mktoForm textarea.mktoField, .mktoForm select.mktoField { width: 193px !important; }
+	.mktoButton { left: 9.2rem !important; }
 }
 
 @media only screen and (max-width: 767px) { 
+	.arrow { display: block !important; }
 	.white-logo { width: 50%; }
 	.tool {width: 73%;}
 	.tool-right h1 {font-size: 1.8rem; margin-top: 2rem;}
 	.tool-right h1, .tools-copy, li { margin-left: 3rem; }
 	.tools-copy, li {width: 55%; font-size: 0.9rem;}
+	label.mktoLabel.mktoHasWidth {font-size: 0.9rem !important; width: 144px !important; }
 	.homepage-link, .previous, .next {font-size: 0.9rem;}
 	.previous { margin-left: 3rem; }
+	form#mktoForm_246, form#mktoForm_253, form#mktoForm_252 {margin-left: 2.4rem !important;}
+	.mktoForm input[type=text], .mktoForm input[type=url], .mktoForm input[type=email], .mktoForm input[type=tel], .mktoForm input[type=number], .mktoForm input[type=date], .mktoForm textarea.mktoField, .mktoForm select.mktoField { width: 244px !important; padding-top: 5px !important; }
+	.mktoButton { left: 13.8rem !important; }
+	.mktoButtonRow {margin-top: 0.3rem !important;}
+}
+
+@media only screen and (max-width: 720px) { 
+	.arrow {left: 35rem;}
+}
+
+@media only screen and (max-width: 670px) { 
+	.arrow {left: 32rem; top: 17rem;}
+}
+
+@media only screen and (max-width: 620px) { 
+	.mktoForm input[type=text], .mktoForm input[type=url], .mktoForm input[type=email], .mktoForm input[type=tel], .mktoForm input[type=number], .mktoForm input[type=date], .mktoForm textarea.mktoField, .mktoForm select.mktoField { width: 194px !important; padding-top: 4px !important; }
+	label.mktoLabel.mktoHasWidth { width: 138px !important; }
+	.mktoButton { left: 11.8rem !important;  }
+	.arrow {left: 29.5rem; top: 16rem;}
 }
 
 @media only screen and (max-width: 600px) { 
+	.arrow {left: 29rem;}
 	.tool {width: 78%;}
 	.tool-right h1 {font-size: 1.6rem;}
 	.tools-copy, li {width: 64%; font-size: 0.8rem;}
+	label.mktoLabel.mktoHasWidth {font-size: 0.8rem !important; width: 125px !important;}
+	.mktoButton { left: 9.5rem !important;  }
+	.mktoForm input[type=text], .mktoForm input[type=url], .mktoForm input[type=email], .mktoForm input[type=tel], .mktoForm input[type=number], .mktoForm input[type=date], .mktoForm textarea.mktoField, .mktoForm select.mktoField {padding-top: 3px !important; }
+}
+
+@media only screen and (max-width: 540px) { 
+	.arrow {left: 27.5rem; top: 15.5rem;}
 }
 
 @media only screen and (max-width: 500px) { 
+	.arrow {left: 24rem; top: 15rem;}
 	.tool {width: 74%;}
 	.tool-right h1, .tools-copy, li { margin-left: 1.5rem; }
 	.tool-right h1 { margin-top: 0.8rem; }
 	.tools-copy, li {width: 62%; font-size: 0.75rem;}
+	label.mktoLabel.mktoHasWidth {font-size: 0.75rem !important; margin-bottom: 0.8rem !important;}
 	.previous, .white-logo { margin-left: 1.5rem; }
 	.homepage-link, .next {margin-right: 1.5rem;}
 	.homepage-link, .previous, .next {font-size: 0.75rem;}
 	.white-logo { width: 68%; }
+	form#mktoForm_246, form#mktoForm_253, form#mktoForm_252 { margin-left: 1.5rem !important; margin-top: -1rem !important; }
+	.mktoForm input[type=text], .mktoForm input[type=url], .mktoForm input[type=email], .mktoForm input[type=tel], .mktoForm input[type=number], .mktoForm input[type=date], .mktoForm textarea.mktoField, .mktoForm select.mktoField {width: 234px !important; }
+	.mktoButton { left: 0rem !important; top: 0.5rem !important; }
+}
+
+@media only screen and (max-width: 480px) { 
+	form#mktoForm_246, form#mktoForm_253, form#mktoForm_252 { margin-left: 0.9rem !important; margin-top: -0.9rem !important; }
+	.mktoButtonRow { margin-top: 0rem !important; }
+	.arrow {left: 23rem; top: 14.5rem;}
+}
+
+@media only screen and (max-width: 445px) { 
+	.arrow {left: 21.5rem; top: 13.5rem;}
 }
 
 @media only screen and (max-width: 414px) { 
@@ -240,13 +371,16 @@ li {
 	.tool {width: 91%;}
 	.tools-copy, li { width: 75%; }
 	.tool img { padding: 1.5rem; }
+	.arrow {left: 24.1rem; top: 14.5rem; width: 4%;}
 }
 
 @media only screen and (max-width: 375px) { 
+	.arrow {left: 21.8rem; top: 15.5rem;}
 	.small { flex-direction: column; }
 	.white-logo {width: 42%; margin-bottom: 1rem;}
 	.homepage-link { float: left; margin-left: 1.5rem; margin-top: 0rem; margin-bottom: 2.5rem; }
 	.tools-copy, li {width: 80%;}
 	.tool {width: 90%;}
 	.small .col-6 {max-width: 100%;}
+	.mktoForm input[type=text], .mktoForm input[type=url], .mktoForm input[type=email], .mktoForm input[type=tel], .mktoForm input[type=number], .mktoForm input[type=date], .mktoForm textarea.mktoField, .mktoForm select.mktoField {width: 217px !important; }
 }
